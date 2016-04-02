@@ -1,0 +1,90 @@
+/* ----- Base styling ----- */
+* {
+  font-family: "Lucidia Console", Courier, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.coll {
+  position: relative;
+  text-align: left;
+
+}
+
+.section {
+  background-color: grey;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+p {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 175%;
+  text-align: center;
+}
+
+.spacer {
+  height: 30px;
+}
+
+.title {
+  border: 2px solid black;
+  font-size: 125%;
+  width: 130px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 10;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#title1 {
+  background-color: aqua;
+}
+
+#title2 {
+  background-color: red;
+}
+
+#title3 {
+  background-color: yellow;
+}
+
+/* -------- Desktops -------- */
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    width: 33.33%;
+  }
+}
+/* -------- Tablet devices ------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* -------- Mobile devices ------- */
+@media (max-width: 767px) {
+  .col-sm {
+    float: left;
+    width: 100%;
+  }
